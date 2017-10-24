@@ -203,7 +203,7 @@ module.exports = function () {
             if (error) { error.call(_this, res); }
         };
 
-        if (this.watch.authenticated !== true && !data.enabled) {
+        if (!data.enabled) {
             _fetchProcess.call(this, {}, data);
         }
         else {
